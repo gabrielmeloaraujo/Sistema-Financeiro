@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: roboto;
+    
+}
+a{
+    text-decoration: none;
 }
 #barra-de-busca{
     visibility: hidden;
@@ -11,8 +15,16 @@
 .barra-superior{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: #02F2BD;
+    height: 7vh;
+    
 }
 .container-icones{
     display: flex;
     flex-direction: row;
+}
+
+.mostra-icones{
+    margin-right: 11px;
 }

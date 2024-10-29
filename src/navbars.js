@@ -15,7 +15,7 @@ function criarBarraSuperior() {
                   <img src="/imagens/toggle_menu.svg" alt="mostrar ícones de navegaçao">
               </div>
               <div class="container-icones">
-                  <div class="busca">
+                  <div class="busca" id ="container-busca">
                     <img src="/imagens/search_icon.svg" alt="icone de busca" id="buscar">
                       
                   </div>
@@ -28,3 +28,4 @@ function criarBarraSuperior() {
               </div>
           `;
 }
+
