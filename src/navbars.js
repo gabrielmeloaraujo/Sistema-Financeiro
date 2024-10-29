@@ -2,7 +2,6 @@
 //FUNCAO PARA CLICAR NA LUPA E MOSTRAR ESSA MERDA
 //<input type="text" name="barra-de-busca" id="barra-de-busca"> colocar
 window.onload = () => {
-  
   //Cria a barra superior de navegação
   const icones = document.createElement("div");
   icones.classList.add("barra-superior");
@@ -10,13 +9,17 @@ window.onload = () => {
   const barraSuperior = document.getElementById("cabecalho");
   barraSuperior.appendChild(icones);
 
-  const sideBarExpandida = document.createElement("nav")
-  sideBarExpandida.classList.add('nav-bar-expandida')
+  const sideBarExpandida = document.createElement("nav");
+  sideBarExpandida.classList.add("nav-bar-expandida");
   sideBarExpandida.innerHTML = criarSideBarExpandida();
-  const vSideBarExpandida = document.getElementById('side-bar-expandida')
-  vSideBarExpandida.appendChild(sideBarExpandida)
+  const vSideBarExpandida = document.getElementById("side-bar-expandida");
+  vSideBarExpandida.appendChild(sideBarExpandida);
 
-
+  const vSideBarRecolhida = document.createElement("nav");
+  vSideBarRecolhida.classList.add("side-bar-recolhida");
+  vSideBarRecolhida.innerHTML = criarSideBarRecolhida();
+  const sideBarRecolhida = document.getElementById("side-bar-recolhida")
+  sideBarRecolhida.appendChild(vSideBarRecolhida)
 
 };
 //html da barra superior de navegação
@@ -40,23 +43,21 @@ function criarBarraSuperior() {
           `;
 }
 //barra lateral de navegação, on hover
-function criarSideBarExpandida (){
+function criarSideBarExpandida() {
   return `      
             <ul>
                 <li>Dashboard</li>
                 <li>Movimentações</li>
                 <li><ul class="lista-interna"> 
-                    <a href="/contas_receber.html">
-                    <li>Contas a Receber</li>
-                    </a>
-                    <li>Contas a Pagar</li>
-                    <li>Projetos</li>
-                    <li>Orçamentos</li>
+                    <li><a href="/contas_receber.html">Contas a Receber</a></li>
+                    <li><a href="/contas_pagar.html">Contas a Pagar</a></li>
+                    <li><a href="/projetos.html">Projetos</a></li>
+                    <li><a href="/orcamentos.html">Orçamentos</a></li>
                 </ul></li>              
                 <li>Relatórios</li>
-                <li><a href="/cadastros.html"></a>Cadastros</li>
-                <li class="lista-interna">
-                    <ul>
+                <li><a href="/cadastros.html">Cadastros</a></li>
+                <li>
+                    <ul class="lista-interna">
                       <li>Serviços</li>
                       <li>Clientes</li>
                     </ul>
@@ -64,10 +65,25 @@ function criarSideBarExpandida (){
                 
                 <li>Configurações</li>
             </ul>
-          `
+          `;
 }
 
 //barra lateral de navegação, só os ícones, sem hover
-function criarSideBarRecolhida (){
-
+function criarSideBarRecolhida() {
+  return `   <ul>
+    <li><a href="index.html"><img src="/imagens/icones/dashboard.svg"></a></li>
+    <li><ul> 
+        <li><a href="/contas_receber.html"><img src="/imagens/icones/contas_receber.svg" alt=""></a></li>
+        <li><a href="/contas_pagar.html"><img src="/imagens/icones/contas_pagar.svg" alt=""></a></li>
+        <li><a href="/projetos.html"><img src="/imagens/icones/projetos.svg" alt=""></a></li>
+        <li><a href="/orcamentos.html"><img src="/imagens/icones/orcamentos.svg" alt=""></a></li>
+    </ul></li>              
+    <li>
+        <ul>
+          <li><a href="/servicos.html"><img src="/imagens/icones/servicos.svg" alt=""></a></li>
+          <li><a href="/clientes.html"><img src="/imagens/icones/clientes.svg" alt=""></a></li>
+        </ul>
+    </li>
+    <li><a href=""><img src="/imagens/icones/configuracoes.svg" alt=""></a></li>
+</ul>`;
 }
