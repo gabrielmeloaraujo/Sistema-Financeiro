@@ -54,9 +54,14 @@ function criarSideBarExpandida (){
                     <li>Orçamentos</li>
                 </ul></li>              
                 <li>Relatórios</li>
-                <a href="/cadastros.html"><li>Cadastros</li></a>
-                <li>Serviços</li>
-                <li>Clientes</li>
+                <li><a href="/cadastros.html"></a>Cadastros</li>
+                <li class="lista-interna">
+                    <ul>
+                      <li>Serviços</li>
+                      <li>Clientes</li>
+                    </ul>
+                </li>
+                
                 <li>Configurações</li>
             </ul>
           `
