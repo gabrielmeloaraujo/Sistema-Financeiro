@@ -1,14 +1,5 @@
 /* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: roboto;
-    
-}
-a{
-    text-decoration: none;
-}
+
 #barra-de-busca{
     visibility: hidden;
 }
@@ -23,8 +14,19 @@ a{
 .container-icones{
     display: flex;
     flex-direction: row;
+    margin-right: 20px;
 }
 
+.notaficacoes{
+    margin: 0 20px
+}
 .mostra-icones{
-    margin-right: 11px;
+    margin-left: 20px;
+}
+#side-bar-expandida{
+    visibility: visible;
+    margin-left: 20px;
+}
+.lista-interna{
+    margin-left: 20px;
 }
