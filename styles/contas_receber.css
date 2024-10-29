@@ -37,6 +37,7 @@ body {
 
 
 header {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,24 +57,144 @@ header h2 {
     color: #888;
 }
 
-.input-group {
+.input-valor {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
 }
 
-.input-group label {
+.input-valor label {
     font-size: 14px;
     color: #666;
     margin-bottom: 5px;
 }
 
-.input-group input {
+.input-valor input {
     padding: 8px 12px;
     font-size: 14px;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+
+.input-vencimento {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-vencimento label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.input-vencimento input {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.input-parcelamento {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-parcelamento label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.input-parcelamento input {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.input-descricao {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-descricao label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.input-descricao input {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.input-cliente {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-cliente label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.input-cliente input {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.input-conta {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-conta label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.input-conta input {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.input-observacao {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-observacao label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.input-observacao input {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+
+
+
+
 
 .button-group {
     display: flex;
