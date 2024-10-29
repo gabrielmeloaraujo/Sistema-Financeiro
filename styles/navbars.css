@@ -9,6 +9,7 @@
     align-items: center;
     background-color: #02F2BD;
     height: 7vh;
+    width: 100%;
     
 }
 .container-icones{
@@ -23,6 +24,10 @@
 .mostra-icones{
     margin-left: 20px;
 }
+
+#container-side-bar{
+    width: 215px;
+}
 #side-bar-expandida{
     background-color: #F0F1F1;
     visibility: visible;
@@ -30,4 +35,7 @@
 }
 .lista-interna{
     margin-left: 20px;
+}
+.teste {
+    display: flex;
 }
