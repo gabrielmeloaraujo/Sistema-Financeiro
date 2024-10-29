@@ -16,14 +16,14 @@ function criarBarraSuperior() {
               </div>
               <div class="container-icones">
                   <div class="busca">
-                      <img src="/imagens/search_icon.svg" alt="icone de busca" id="buscar">
+                    <img src="/imagens/search_icon.svg" alt="icone de busca" id="buscar">
                       
                   </div>
                   <div class="notaficacoes">
                       <img src="/imagens/notafication_read.svg" alt="notaficações" id="notaficacoes">
                   </div>
                   <div class="faq">
-                      <img src="/imagens/ajuda_manuais.svg" alt="Ajuda/Manuais">
+                      <a href="https:\\chatgpt.com" target="_blank"><img src="/imagens/ajuda_manuais.svg" alt="Ajuda/Manuais"></a>
                   </div>
               </div>
           `;
