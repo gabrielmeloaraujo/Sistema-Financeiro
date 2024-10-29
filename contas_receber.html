@@ -3,17 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/navbars.css">
-    <link rel="stylesheet" href="/styles/genericos.css">
+    <link rel="stylesheet" href="/styles/contas_receber.css">
     <script src="/src/barraSuperior.js"></script>
     <title>Contas a Receber</title>
 </head>
 <body>
     <section id="cabecalho">
+  
+    </section>
 
-    </section>
-    <section id="side-bar-expandida">
-        
-    </section>
+    <div class="container">
+        <div class="form-box">
+            <header>
+                <h2>Contas a Receber</h2>
+                <button class="close-button">×</button>
+            </header>
+            <form>
+                <div class="input-group">
+                    <label for="number">valor</label>
+                    <input type="number" id="number" placeholder="123">
+                </div>
+                <div class="input-group">
+                    <label for="date">Data vencimento</label>
+                    <input type="date" id="date" placeholder="Conta">
+                </div>
+                <div class="input-group">
+                    <label for="number">Parcelamento</label>
+                    <input type="number" id="number" placeholder="x12">
+                </div>
+                <div class="input-group">
+                    <label for="name">Descrição</label>
+                    <input type="text" id="name" placeholder="Exemplo">
+                </div>
+                <div class="input-group">
+                    <label for="name">Cliente</label>
+                    <input type="text" id="name" placeholder="celton melo">
+                </div>
+                <div class="input-group">
+                    <label for="number">Conta</label>
+                    <input type="number" id="number" placeholder="Conta">
+                </div>
+                <div class="input-group">
+                    <label for="text">Observação</label>
+                    <input type="text" id="text" placeholder="Observação">
+                </div>
+                
+                <div class="button-group">
+                    <button type="submit" class="save-button">Salvar</button>
+                    <button type="button" class="cancel-button">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
