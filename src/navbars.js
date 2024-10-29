@@ -9,14 +9,14 @@ window.onload = () => {
   const barraSuperior = document.getElementById("cabecalho");
   barraSuperior.appendChild(icones);
 
-  const sideBarExpandida = document.createElement("nav");
+ /* const sideBarExpandida = document.createElement("nav");
   sideBarExpandida.classList.add("nav-bar-expandida");
   sideBarExpandida.innerHTML = criarSideBarExpandida();
   const vSideBarExpandida = document.getElementById("side-bar-expandida");
-  vSideBarExpandida.appendChild(sideBarExpandida);
+  vSideBarExpandida.appendChild(sideBarExpandida);*/
 
   const vSideBarRecolhida = document.createElement("nav");
-  vSideBarRecolhida.classList.add("side-bar-recolhida");
+  vSideBarRecolhida.classList.add("container-side-bar-recolhida");
   vSideBarRecolhida.innerHTML = criarSideBarRecolhida();
   const sideBarRecolhida = document.getElementById("side-bar-recolhida")
   sideBarRecolhida.appendChild(vSideBarRecolhida)
