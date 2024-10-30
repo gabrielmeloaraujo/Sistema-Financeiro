@@ -53,10 +53,9 @@ header h2 {
     align-items: center;
 }
 
-
 @media (max-width: 768px) {
     .form-box {
-        width: 90%; /* a largura sera ajustada para ocupar quase toda a tela */
+        width: 50%; /* a largura sera ajustada para ocupar quase toda a tela */
         padding: 15px; /* Reduzindo o padding */
     }
 
@@ -84,14 +83,14 @@ header h2 {
 
 .input-group {
     display: flex;
-   gap: 10px;
+    gap: 10px;
 }
 
 
- .input-group .input-field {
+.input-group .input-field {
     display: flex;
     flex: 1;
-    align-items: center;
+    display: flex;
     flex-direction: column;
 }
 
@@ -100,8 +99,17 @@ header h2 {
     display: flex;
     font-size: 14px;
     color: #666;
+    margin-bottom: 5px;
 }
 
+.input-field input {
+    display: flex;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
 
 .save-button {
     background-color: #4CAF50;

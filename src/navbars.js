@@ -71,19 +71,22 @@ function criarSideBarExpandida() {
 //barra lateral de navegação, só os ícones, sem hover
 function criarSideBarRecolhida() {
   return `   <ul>
-    <li><a href="index.html"><img src="/imagens/icones/dashboard.svg"></a></li>
+    <li><a href="index.html" class="tooltip"><img src="/imagens/icones/dashboard.svg"><span class="tooltip-text">Dashboard</span></a></li>
     <li><ul> 
-        <li><a href="/contas_receber.html"><img src="/imagens/icones/contas_receber.svg" alt=""></a></li>
-        <li><a href="/contas_pagar.html"><img src="/imagens/icones/contas_pagar.svg" alt=""></a></li>
-        <li><a href="/projetos.html"><img src="/imagens/icones/projetos.svg" alt=""></a></li>
-        <li><a href="/orcamentos.html"><img src="/imagens/icones/orcamentos.svg" alt=""></a></li>
+        <li><a href="/contas_receber.html" class="tooltip"><img src="/imagens/icones/contas_receber.svg"><span class="tooltip-text">Contas a Receber</span></a></li>
+        <li><a href="/contas_pagar.html" class="tooltip"><img src="/imagens/icones/contas_pagar.svg"><span class="tooltip-text">Contas a Pagar</span></a></li>
+        <li><a href="/projetos.html" class="tooltip"><img src="/imagens/icones/projetos.svg"><span class="tooltip-text">Projetos</span></a></li>
+        <li><a href="/orcamentos.html" class="tooltip"><img src="/imagens/icones/orcamentos.svg"><span class="tooltip-text">Orçamentos</span></a></li>
     </ul></li>              
     <li>
         <ul>
-          <li><a href="/servicos.html"><img src="/imagens/icones/servicos.svg" alt=""></a></li>
-          <li><a href="/clientes.html"><img src="/imagens/icones/clientes.svg" alt=""></a></li>
+          <li><a href="/servicos.html" class="tooltip"><img src="/imagens/icones/servicos.svg"><span class="tooltip-text">Serviços</span></a></li>
+          <li><a href="/clientes.html" class="tooltip"><img src="/imagens/icones/clientes.svg"><span class="tooltip-text">Clientes</span></a></li>
         </ul>
     </li>
-    <li><a href=""><img src="/imagens/icones/configuracoes.svg" alt=""></a></li>
+    <li><a href="" class="tooltip"><img src="/imagens/icones/configuracoes.svg" title="Configurações"><span class="tooltip-text">Configurações</span></a></li>
 </ul>`;
+
 }
+
+
