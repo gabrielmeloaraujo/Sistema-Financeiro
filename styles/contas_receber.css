@@ -56,7 +56,7 @@ header h2 {
 
 @media (max-width: 768px) {
     .form-box {
-        width: 90%; /* a largura sera ajustada para ocupar quase toda a tela */
+        width: 50%; /* a largura sera ajustada para ocupar quase toda a tela */
         padding: 15px; /* Reduzindo o padding */
     }
 
