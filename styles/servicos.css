@@ -54,16 +54,44 @@ header h2 {
 }
 
 
-.input-group {
-    display: flex;
-    gap: 10px;
+@media (max-width: 768px) {
+    .form-box {
+        width: 90%; /* a largura sera ajustada para ocupar quase toda a tela */
+        padding: 15px; /* Reduzindo o padding */
+    }
+
+    .input-group {
+        flex-direction: column; /* os campos ficam em uma coluna, em vez de lado a lado */
+    }
+
+    .close-button {
+        margin-left: auto; /* ajusta o botão para nao ocupar muito espaço */
+    }
 }
 
 
-/* .input-group .input-field {
+@media (max-width: 768px) {
+    header h2 {
+        font-size: 16px;
+    }
+
+    .save-button, .cancel-button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+
+.input-group {
+    display: flex;
+   gap: 10px;
+}
+
+
+ .input-group .input-field {
     display: flex;
     flex: 1;
-    display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -72,17 +100,8 @@ header h2 {
     display: flex;
     font-size: 14px;
     color: #666;
-    margin-bottom: 5px;
 }
 
-.input-field input {
-    display: flex;
-    padding: 8px 12px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 10px;
-} */
 
 .save-button {
     background-color: #4CAF50;
