@@ -1,13 +1,12 @@
-// Aguarda o carregamento completo do DOM
 
     const form = document.getElementById("salvar")
     
-    // Recupera dados armazenados previamente ou inicia uma lista vazia
+    // Recupera dados armazenados
     let descricoes = JSON.parse(localStorage.getItem("Descricoes")) || [];
     
     // Função para salvar a descrição
     form.addEventListener('click', (event) =>{
-        event.preventDefault(); // Evita o envio do formulário e o recarregamento da página
+    event.preventDefault(); // Evita o envio do formulário e o recarregamento da página
         
         // Captura o valor do campo de entrada
         const descricaoInput = document.getElementById("Descricao").value;
