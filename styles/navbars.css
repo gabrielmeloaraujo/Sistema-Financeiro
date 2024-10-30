@@ -1,5 +1,37 @@
 /* Reset básico */
 
+/* Estilo do link e do ícone */
+ul li a {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Esconde o texto da tooltip por padrão */
+  .tooltip .tooltip-text {
+    visibility: hidden;
+    width: max-content;
+    background-color: #02F2BD;
+    color: #000000;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 30%; 
+    left: 125%;
+    transform: translateX(-15%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  
+  /* Exibe a tooltip ao passar o mouse */
+  .tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+
 #barra-de-busca{
     visibility: hidden;
 }
@@ -54,3 +86,4 @@
 #side-bar-recolhida li{
     margin-top: 25px;
 }
+
