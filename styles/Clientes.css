@@ -96,7 +96,7 @@ header h2 {
 
 
 .input-field label {
-    display: flex;
+    display: flex ;
     font-size: 14px;
     color: #666;
     margin-bottom: 5px;
