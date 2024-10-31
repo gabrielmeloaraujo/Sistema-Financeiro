@@ -84,7 +84,7 @@ function criarSideBarRecolhida() {
           <li><a href="/clientes.html" class="tooltip"><img src="/imagens/icones/clientes.svg"><span class="tooltip-text">Clientes</span></a></li>
         </ul>
     </li>
-    <li><a href="" class="tooltip"><img src="/imagens/icones/configuracoes.svg" title="Configurações"><span class="tooltip-text">Configurações</span></a></li>
+    <li><a href="" class="tooltip"><img src="/imagens/icones/configuracoes.svg"><span class="tooltip-text">Configurações</span></a></li>
 </ul>`;
 
 }

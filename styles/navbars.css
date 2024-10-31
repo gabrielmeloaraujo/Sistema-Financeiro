@@ -7,30 +7,35 @@ ul li a {
   }
   
   /* Esconde o texto da tooltip por padrão */
-  .tooltip .tooltip-text {
+  .tooltip .tooltip-text{
     visibility: hidden;
     width: max-content;
     background-color: #02F2BD;
     color: #000000;
     text-align: center;
+    align-items: center;
+    justify-content: left;
+    margin-left: 5px;
+    padding-right: 5px;
     border-radius: 5px;
     height: 48px;
     position: absolute;
-    z-index: 1;
-    bottom: 15%; 
+    bottom: 15%;
     left: 125%;
     transform: translateX(-15%);
     opacity: 0;
     transition: opacity 0.3s;
     font-size: 16px;
-    white-space: nowrap;
     display: flex;
-    align-items: center;
-    margin-left: 5px;
-    padding-right: 5px;
+  }
+
+  .tooltip-text{
+
+    padding-left: 15px;
+    
   }
   
-  /* Exibe a tooltip ao passar o mouse */
+  /* Exibe a tooltipao passar o mouse */
   .tooltip:hover .tooltip-text {
     visibility: visible;
     opacity: 1;
